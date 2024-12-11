@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Design Styles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Modern Design Styles</h1>
+  </header>
+
+  <main>
+    <!-- Стилі -->
+    <section class="styles">
+      <div class="style-card">
+        <img src="images/style1.jpg" alt="Opium Style">
+        <h2>OPIUM</h2>
+      </div>
+      <div class="style-card">
+        <img src="images/style2.jpg" alt="Y2K Style">
+        <h2>Y2K</h2>
+      </div>
+      <div class="style-card">
+        <img src="images/style3.jpg" alt="Old Money Style">
+        <h2>OLD MONEY</h2>
+      </div>
+    </section>
+
+    <!-- Вибір стилю -->
+    <section class="form-section">
+      <h2>Your Favorite Style</h2>
+      <form id="styleForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="styleSelect">Choose your favorite style:</label>
+        <select id="styleSelect" name="style" required>
+          <option value="" disabled selected>Select a style</option>
+          <option value="Opium">Opium</option>
+          <option value="Y2K">Y2K</option>
+          <option value="Old Money">Old Money</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="thankYouMessage"></div>
+    </section>
+
+    <!-- Відповіді користувачів -->
+    <section class="responses">
+      <h2>User Responses</h2>
+      <div id="responsesList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
